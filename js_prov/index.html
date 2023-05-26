@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="EventDiv">
+    <p id="text"></p>
+    <h1 id="demo"></h1>
+    <p id="time"></p>
+    <img id="pic" src="dice-1.png" style=" height: 100px; width: 100px; ">
+  
+  </div>
+
+  <div class="button-container">
+    <Button class = "hover-effect" onclick="Changebgc()">Change Bg</button>
+    <button class = "hover-effect" onclick="ChangeText()">Good vibes</button>
+    <button class = "hover-effect" onclick="ChangeTime()">Time</button>
+    <button class = "hover-effect" onclick="ChangeImg()">Change picure</button>
+    <button class = "hover-effect" onclick="ChangeHide()">Hide picture</button>
+    <button class = "hover-effect" onclick="ChangeShow()">Show Picture</button>
+  
+  </div>
+
+
+<script>
+        function ChangeText()
+        {
+            document.getElementById('demo').innerHTML = 'Be the best verion of you!';
+        }
+        function ChangeTime()
+        {
+            document.getElementById('time').innerHTML = Date();
+        }
+
+        function Changebgc()
+        {
+            document.querySelector('body').style.backgroundColor = "limegreen";
+        }
+
+        function ChangeImg()
+        {
+            document.getElementById('pic').src = 'dice-6.png';
+        }
+
+        function ChangeHide() {
+              document.getElementById('pic').style.visibility = ('hidden');
+          }
+
+          function ChangeShow() {
+              document.getElementById('pic').src = "dice-6.png"
+          }
+
+</script>
+
+
+  
+
+</body>
+</html>
